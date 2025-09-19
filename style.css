@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: #00bcd4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    background: #1a1a1a;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #e0e0e0;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+h2 {
+    color: #00bcd4; /* mesma cor do nome no header */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #00bcd4; /* linha na mesma cor */
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.hobbies {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobby {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.contato {
+    text-align: center;
+}
+
+.contato p {
+    margin-bottom: 20px;
+}
+
+.contato .btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contato .btn:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1f1f1f;
+    color: #00bcd4; /* cor do rodapé igual ao header */
+    margin-top: 20px;
+}
