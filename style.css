@@ -1,124 +1,114 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #121212;
-    color: #f5f5f5;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #1e1e1e;
-    color: #f5f5f5;
-    padding: 30px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-top: 15px;
-}
-
-.foto-perfil {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #3498db;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    background-color: #ffffff;
+    color: #333;
 }
 
 nav {
-    background: #0d47a1;
-    display: flex;
-    justify-content: center;
-}
-
-nav a {
-    color: #f5f5f5;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-nav a:hover {
-    background: #1565c0;
-}
-
-section {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
-}
-
-h2 {
-    color: #3498db;
-    margin-bottom: 15px;
+    background-color: #2e8b57;
+    padding: 10px 0;
     text-align: center;
 }
 
-h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #3498db;
-    margin: 8px auto 0;
-    border-radius: 2px;
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #276746;
+    border-radius: 5px;
+}
+
+header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    color: #2e8b57;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #2e8b57;
+    text-align: center;
+    margin-top: 40px;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
 }
 
 .hobbies {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .hobby {
-    background: #2c2c2c;
-    padding: 15px;
-    border-radius: 8px;
-    flex: 1;
-    min-width: 150px;
-    text-align: center;
-    color: #ddd;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-left: 5px solid #2e8b57;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+}
+
+.skills-list li {
+    background-color: #f9f9f9;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-left: 5px solid #2e8b57;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .contato {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.contato p {
-    margin-bottom: 20px;
-}
-
-.contato .btn {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
+.btn {
     text-decoration: none;
+    color: #ffffff;
+    background-color: #2e8b57;
+    padding: 8px 15px;
     border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: bold;
 }
 
-.contato .btn:hover {
-    background-color: #217dbb;
+.btn:hover {
+    background-color: #276746;
 }
 
 footer {
     text-align: center;
-    padding: 15px;
-    background: #1e1e1e;
-    color: #aaa;
-    margin-top: 20px;
+    padding: 15px 0;
+    background-color: #2e8b57;
+    color: #ffffff;
+    margin-top: 40px;
 }
