@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,51 +7,64 @@
 }
 
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
 }
 
+/* Cabeçalho com foto */
 header {
-    background-color: #1f1f1f;
-    color: #00bcd4;
-    padding: 20px 0;
+    background-color: #007acc;
+    color: white;
+    padding: 30px 0;
     text-align: center;
 }
 
 header h1 {
     font-size: 2.5em;
+    margin-top: 15px;
 }
 
+.foto-perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Navegação */
 nav {
-    background: #1a1a1a;
+    background: #005fa3;
     display: flex;
     justify-content: center;
 }
 
 nav a {
-    color: #e0e0e0;
+    color: white;
     padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: background 0.3s;
 }
 
 nav a:hover {
-    color: #00bcd4;
+    background: #004b80;
 }
 
+/* Seções */
 section {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background: #1e1e1e;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #00bcd4; /* mesma cor do nome no header */
+    color: #007acc;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -60,11 +74,12 @@ h2::after {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #00bcd4; /* linha na mesma cor */
+    background-color: #007acc;
     margin: 8px auto 0;
     border-radius: 2px;
 }
 
+/* Hobbies */
 .hobbies {
     display: flex;
     gap: 20px;
@@ -73,15 +88,15 @@ h2::after {
 }
 
 .hobby {
-    background: #2a2a2a;
+    background: #e0f0ff;
     padding: 15px;
     border-radius: 8px;
     flex: 1;
     min-width: 150px;
     text-align: center;
-    border: 1px solid #333;
 }
 
+/* Contato */
 .contato {
     text-align: center;
 }
@@ -94,22 +109,22 @@ h2::after {
     display: inline-block;
     margin: 5px;
     padding: 10px 20px;
-    background-color: #00bcd4;
-    color: #121212;
+    background-color: #3498db;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s;
 }
 
 .contato .btn:hover {
-    background-color: #0097a7;
-    transform: scale(1.05);
+    background-color: #217dbb;
 }
 
+/* Rodapé */
 footer {
     text-align: center;
     padding: 15px;
-    background: #1f1f1f;
-    color: #00bcd4; /* cor do rodapé igual ao header */
+    background: #007acc;
+    color: white;
     margin-top: 20px;
 }
