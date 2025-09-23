@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +6,14 @@
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #f5f5f5;
     line-height: 1.6;
 }
 
-/* Cabeçalho com foto */
 header {
-    background-color: #007acc;
-    color: white;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
     padding: 30px 0;
     text-align: center;
 }
@@ -30,19 +28,18 @@ header h1 {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    border: 3px solid #3498db;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
-/* Navegação */
 nav {
-    background: #005fa3;
+    background: #0d47a1;
     display: flex;
     justify-content: center;
 }
 
 nav a {
-    color: white;
+    color: #f5f5f5;
     padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
@@ -50,21 +47,20 @@ nav a {
 }
 
 nav a:hover {
-    background: #004b80;
+    background: #1565c0;
 }
 
-/* Seções */
 section {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background: white;
+    background: #1e1e1e;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 h2 {
-    color: #007acc;
+    color: #3498db;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -74,12 +70,11 @@ h2::after {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #007acc;
+    background-color: #3498db;
     margin: 8px auto 0;
     border-radius: 2px;
 }
 
-/* Hobbies */
 .hobbies {
     display: flex;
     gap: 20px;
@@ -88,15 +83,15 @@ h2::after {
 }
 
 .hobby {
-    background: #e0f0ff;
+    background: #2c2c2c;
     padding: 15px;
     border-radius: 8px;
     flex: 1;
     min-width: 150px;
     text-align: center;
+    color: #ddd;
 }
 
-/* Contato */
 .contato {
     text-align: center;
 }
@@ -120,11 +115,10 @@ h2::after {
     background-color: #217dbb;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 15px;
-    background: #007acc;
-    color: white;
+    background: #1e1e1e;
+    color: #aaa;
     margin-top: 20px;
 }
