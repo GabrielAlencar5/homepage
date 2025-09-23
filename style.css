@@ -7,13 +7,13 @@ body {
 }
 
 nav {
-    background-color: #1f1f1f;
+    background-color: #0b3d91;
     padding: 10px 0;
     text-align: center;
 }
 
 nav a {
-    color: #e0e0e0;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     margin: 0 15px;
@@ -21,7 +21,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #333333;
+    background-color: #1452b3;
     border-radius: 5px;
 }
 
@@ -35,16 +35,16 @@ header {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #2e8b57;
+    border: 3px solid #0b3d91;
 }
 
 h1 {
-    color: #2e8b57;
+    color: #ffffff;
     margin-top: 10px;
 }
 
 h2 {
-    color: #2e8b57;
+    color: #0b3d91;
     text-align: center;
     margin-top: 40px;
 }
@@ -56,17 +56,16 @@ section {
 
 .hobbies {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .hobby {
     background-color: #1f1f1f;
     padding: 10px 15px;
-    border-left: 5px solid #2e8b57;
     border-radius: 5px;
-    max-width: 600px;
+    max-width: 250px;
     color: #e0e0e0;
 }
 
@@ -82,30 +81,33 @@ section {
     background-color: #1f1f1f;
     margin: 8px 0;
     padding: 10px 15px;
-    border-left: 5px solid #2e8b57;
+    border-left: 5px solid #0b3d91;
     border-radius: 5px;
     font-size: 16px;
     color: #e0e0e0;
 }
 
-.contato {
+.contatos-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
-.btn {
+.contato-item {
     text-decoration: none;
     color: #ffffff;
-    background-color: #2e8b57;
-    padding: 8px 15px;
-    border-radius: 5px;
+    background-color: #0b3d91;
+    padding: 10px 20px;
+    border-radius: 8px;
     font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #276746;
+.contato-item:hover {
+    background-color: #1452b3;
+    color: #ffffff;
 }
 
 footer {
